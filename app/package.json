@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "codegen": "openapi --input http://127.0.0.1:8001/openapi.json --output ./generated --client axios"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.8.1",
+    "axios": "^1.6.1",
+    "form-data": "4.x",
+    "next": "14.0.1",
+    "openapi-typescript-codegen": "^0.25.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "6.9.1",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-tailwindcss": "3.13.0",
+    "postcss": "^8",
+    "prettier": "3.0.3",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

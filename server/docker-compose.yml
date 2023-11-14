@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:16
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/db-data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=cookbook
+      - POSTGRES_USER=chad
+      - POSTGRES_PASSWORD=moomoo
